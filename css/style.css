@@ -1,0 +1,203 @@
+/* common css start */
+body{
+    font-family:PlayfairDisplay-Regular ;
+    font-weight: 400;
+    color: #626262;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.c-container{}
+/* common css end */
+@font-face {
+    font-family:PlayfairDisplay-Regular ;
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src:url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family:PlayfairDisplay-Black ;
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+}
+@font-face {
+    font-family:Ubuntu-Light ;
+    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+/* minimo header start */
+.header{
+    padding: 30px 0;
+}
+.minimo-menu ul li a{
+    display: inline-block;
+    margin: 0 60px;
+    padding: 0 !important;
+    font-size: 15px;
+    color: #626262 !important;
+    text-transform: uppercase;
+    position: relative;
+}
+.minimo-menu ul li a::before{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+   width:0;
+   height: 1.5px;
+   background: #626262;
+   visibility: hidden;
+   opacity: 0;
+   transition: .4s;
+
+}
+.minimo-menu ul li a::after{
+   content: "";
+   position: absolute;
+   right: 0;
+   bottom: -2px;
+   width: 0;
+   height: 1.5px;
+   background: #626262;
+   visibility: hidden;
+   opacity: 0;
+   transition: .4s;
+
+}
+.minimo-menu ul li a:hover::before{
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+.minimo-menu ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+/* minimo header end */
+/* MINIMO BANNER CSS START */
+.banner-img img{
+    width: 100%;
+}
+/* MINIMO BANNER CSS END */
+/* minimo getway css staret */
+.getway, .blolg2{
+    padding: 100px 0;
+}
+.d-title{
+    color: #b4ad9e;
+    font-family:Ubuntu-Light ;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.d-paragraph{
+    font-size: 15px;
+    margin-bottom:50px;
+}
+.d-heading{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom:35px;
+}
+.d-subtitle{}
+/* minimo getway css end */
+/* blog css start */
+.blog-item{
+    margin-top: 30px;
+}
+.blog-heading{
+
+}
+.b-img img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+/* blog css end */
+
+/* newslatter css start */
+.newslatter{
+    padding: 80px 0;
+    background: #f0f0f0;
+}
+.n-title{
+    margin-bottom: 65px;
+}
+.n-title h1{
+    color: #333333;
+    font-size: 30px;
+}
+.n-form{
+    position: relative;
+}
+.email-form{
+    padding: 0;
+    width: 100%;
+    height:45px;
+    border: none;
+    border-bottom: 1px solid #111111;
+    border-radius: 0;
+    background: transparent;
+}
+.email-form:focus{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #111111;
+    background: transparent;
+}
+.form-ico{
+    position: absolute;
+    right:-5px;
+    top:10px;
+    background:#ffffff;
+    border: none;
+
+}
+.form-ico button{
+   background: #f0f0f0;
+   border: none;
+
+}
+.form-ico img{
+   
+}
+/* newslatter css end */
+
+/* blog2 start */
+.blog2-button{
+    margin: 100px 0 !important;
+}
+.blog2-button button{
+    height:50px;
+    width: 150px;
+    display: inline-block;
+    border: 1px solid #111111;
+    color: #626262;
+    background: transparent;
+    transition: .4s;
+    
+}
+.blog2-button button:hover{
+    transform: scale(1.1);
+ 
+    
+}
+/* blog2 end */
+
+/* footer css */
+.footer{
+    padding:30px 0;
+    background: #f0f0f0;
+}
+.footer-list ul li a{
+    color: #111111;
+}
+.f-social ul li span{
+    color: #111111;
+}
+.f-social ul li a{
+    color: #111111 !important;
+}
